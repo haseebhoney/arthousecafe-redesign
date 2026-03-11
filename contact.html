@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Contact & Reservations — Art House Café Abu Dhabi</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="shared.css"/>
+<style>
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start;}
+.contact-info-card{background:#fff;border:1px solid var(--light);border-radius:14px;padding:28px 32px;margin-bottom:20px;}
+.contact-info-card:last-child{margin-bottom:0;}
+.cic-label{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--terra);margin-bottom:10px;}
+.cic-value{font-size:15px;color:var(--dark);font-weight:500;line-height:1.65;}
+.cic-value a{color:var(--green);text-decoration:none;}
+.cic-value a:hover{color:var(--terra);}
+.form-card{background:var(--dark);border-radius:16px;padding:40px;}
+.form-card h3{font-family:"Playfair Display",serif;font-size:26px;font-weight:700;color:#fff;margin-bottom:6px;}
+.form-card p{font-size:14px;color:rgba(255,255,255,0.5);margin-bottom:32px;line-height:1.6;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+.form-group{margin-bottom:16px;}
+.form-label{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:8px;display:block;}
+.form-input,.form-select,.form-textarea{width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:13px 16px;font-size:14px;color:#fff;font-family:"DM Sans",sans-serif;outline:none;transition:.25s;}
+.form-input::placeholder,.form-textarea::placeholder{color:rgba(255,255,255,0.25);}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--terra);background:rgba(255,255,255,0.1);}
+.form-select{color:rgba(255,255,255,0.6);}
+.form-select option{background:#1a1209;color:#fff;}
+.form-textarea{resize:vertical;min-height:110px;}
+.form-submit{width:100%;background:var(--terra);color:#fff;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:16px;border:none;border-radius:8px;cursor:pointer;transition:.25s;margin-top:8px;font-family:"DM Sans",sans-serif;}
+.form-submit:hover{background:var(--terra2);}
+.social-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px;}
+.social-card{background:#fff;border:1px solid var(--light);border-radius:12px;padding:20px;text-align:center;transition:.25s;}
+.social-card:hover{border-color:var(--terra);transform:translateY(-2px);}
+.social-icon{font-size:28px;margin-bottom:8px;}
+.social-name{font-size:13px;font-weight:600;color:var(--dark);margin-bottom:4px;}
+.social-handle{font-size:12px;color:var(--terra);}
+.map-embed{background:var(--cream2);border:1px solid var(--light);border-radius:14px;height:280px;display:flex;align-items:center;justify-content:center;margin-top:20px;overflow:hidden;position:relative;}
+.map-placeholder{text-align:center;}
+.map-placeholder p{font-size:13px;color:var(--mid);margin-top:10px;}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr;}.form-row{grid-template-columns:1fr;}.social-grid{grid-template-columns:1fr 1fr;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <span>📍 Al Bateen, Abu Dhabi</span>
+    <span>🕘 Open Daily: 9AM – 11PM</span>
+    <span>📞 02 666 0175</span>
+  </div>
+  <div class="topbar-right">
+    <a href="https://instagram.com/arthousecafead" target="_blank">Instagram</a>
+    <a href="https://facebook.com/ArtHouseCafeAUH" target="_blank">Facebook</a>
+    <a href="https://tiktok.com/@arthousecafead" target="_blank">TikTok</a>
+  </div>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-mark">AH</div>
+      <div class="nav-logo-text">Art House<span>Café — Abu Dhabi</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="activities.html">Activities</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <div class="nav-right">
+      <span class="nav-phone">02 666 0175</span>
+      <a href="contact.html" class="nav-btn">Reserve a Table</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <span>Contact & Reservations</span></div>
+    <h1>Visit Us & <em>Reserve a Table</em></h1>
+    <p>Walk-ins are always welcome. For groups of 6+ or private events, we recommend reserving in advance. We'd love to have you.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="contact-grid">
+
+    <!-- LEFT: Info -->
+    <div>
+      <div class="section-tag">Find Us</div>
+      <h2 class="section-h2" style="font-size:32px;margin-bottom:28px;">We're <em>Here For You</em></h2>
+
+      <div class="contact-info-card">
+        <div class="cic-label">📍 Address</div>
+        <div class="cic-value">Villa 15, Al Huweelat Street<br/>Al Bateen, Abu Dhabi, UAE</div>
+      </div>
+      <div class="contact-info-card">
+        <div class="cic-label">📞 Phone</div>
+        <div class="cic-value"><a href="tel:0226660175">02 666 0175</a></div>
+      </div>
+      <div class="contact-info-card">
+        <div class="cic-label">💬 WhatsApp</div>
+        <div class="cic-value"><a href="https://wa.me/97126660175" target="_blank">Chat with us on WhatsApp</a></div>
+      </div>
+      <div class="contact-info-card">
+        <div class="cic-label">🕘 Opening Hours</div>
+        <div class="cic-value">
+          Monday – Sunday: 9:00 AM – 11:00 PM<br/>
+          <span style="font-size:13px;color:var(--mid);">Open 7 days a week including public holidays</span>
+        </div>
+      </div>
+
+      <!-- Map placeholder -->
+      <div class="map-embed">
+        <div class="map-placeholder">
+          <div style="font-size:40px;">🗺️</div>
+          <p>Villa 15, Al Huweelat St, Al Bateen<br/>Abu Dhabi, UAE</p>
+          <a href="https://maps.google.com/?q=Art+House+Cafe+Abu+Dhabi" target="_blank" style="display:inline-block;margin-top:12px;background:var(--terra);color:#fff;padding:10px 20px;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;">Open in Google Maps</a>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div style="margin-top:40px;">
+        <div class="section-tag">Follow Us</div>
+        <div class="social-grid">
+          <a href="https://instagram.com/arthousecafead" class="social-card" target="_blank">
+            <div class="social-icon">📸</div>
+            <div class="social-name">Instagram</div>
+            <div class="social-handle">@arthousecafead</div>
+          </a>
+          <a href="https://facebook.com/ArtHouseCafeAUH" class="social-card" target="_blank">
+            <div class="social-icon">👍</div>
+            <div class="social-name">Facebook</div>
+            <div class="social-handle">ArtHouseCafeAUH</div>
+          </a>
+          <a href="https://tiktok.com/@arthousecafead" class="social-card" target="_blank">
+            <div class="social-icon">🎵</div>
+            <div class="social-name">TikTok</div>
+            <div class="social-handle">@arthousecafead</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div class="form-card reveal">
+      <h3>Reserve a Table</h3>
+      <p>Fill in your details and we'll confirm your reservation within a few hours during working hours.</p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">First Name *</label>
+          <input type="text" class="form-input" placeholder="Your first name"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Last Name *</label>
+          <input type="text" class="form-input" placeholder="Your last name"/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Phone / WhatsApp *</label>
+          <input type="tel" class="form-input" placeholder="+971 xx xxx xxxx"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="your@email.com"/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Date *</label>
+          <input type="date" class="form-input"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Time *</label>
+          <input type="time" class="form-input"/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Number of Guests *</label>
+          <select class="form-select form-input">
+            <option value="">Select guests...</option>
+            <option>1 – 2 guests</option>
+            <option>3 – 4 guests</option>
+            <option>5 – 6 guests</option>
+            <option>7 – 10 guests</option>
+            <option>10+ guests (Group booking)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Occasion</label>
+          <select class="form-select form-input">
+            <option value="">Select occasion...</option>
+            <option>Regular visit</option>
+            <option>Birthday celebration</option>
+            <option>Anniversary</option>
+            <option>Team outing</option>
+            <option>School trip</option>
+            <option>Private event</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Activities Interested In</label>
+        <select class="form-select form-input">
+          <option value="">Select activity (optional)...</option>
+          <option>Paint a Plate</option>
+          <option>Paint a Brick</option>
+          <option>Paint a Face</option>
+          <option>Lock Your Love</option>
+          <option>Multiple activities</option>
+          <option>No activity — dining only</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Special Requests</label>
+        <textarea class="form-textarea" placeholder="Any dietary requirements, special arrangements, or notes for your visit..."></textarea>
+      </div>
+      <button class="form-submit">Send Reservation Request</button>
+      <p style="font-size:12px;color:rgba(255,255,255,0.3);text-align:center;margin-top:16px;">We'll confirm via WhatsApp or phone within a few hours.</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="section-tag" style="justify-content:center;color:var(--gold);">Can't wait?</div>
+  <h2 class="section-h2" style="color:#fff;text-align:center;">Call or WhatsApp Us <em style="color:var(--gold);">Now</em></h2>
+  <p>Our team is available daily from 9AM to 11PM. Don't hesitate to reach out directly.</p>
+  <div class="cta-btns">
+    <a href="tel:0226660175" class="btn-primary">📞 02 666 0175</a>
+    <a href="https://wa.me/97126660175" class="btn-outline" target="_blank">💬 WhatsApp Us</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Art House Café</div>
+      <div class="footer-brand-tag">Food · Art · Sustainability</div>
+      <p class="footer-brand-desc">Established in 2014 by HE Khalid Sedeeq Al Mutawaa — a café built from the heart to celebrate art, nature, and community in Abu Dhabi.</p>
+    </div>
+    <div>
+      <div class="footer-h">Navigate</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-h">Activities</div>
+      <ul class="footer-links">
+        <li><a href="activities.html">Paint a Plate</a></li>
+        <li><a href="activities.html">Paint a Brick</a></li>
+        <li><a href="activities.html">Paint a Face</a></li>
+        <li><a href="activities.html">Lock Your Love</a></li>
+        <li><a href="contact.html">Birthday Events</a></li>
+        <li><a href="contact.html">Catering</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-h">Contact</div>
+      <div class="footer-contact-item"><span class="footer-contact-icon">📍</span> Villa 15, Al Huweelat St, Al Bateen, Abu Dhabi</div>
+      <div class="footer-contact-item"><span class="footer-contact-icon">📞</span> 02 666 0175</div>
+      <div class="footer-contact-item"><span class="footer-contact-icon">🕘</span> Daily: 9AM – 11PM</div>
+      <div class="footer-contact-item"><span class="footer-contact-icon">📸</span> @arthousecafead</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Art House Café — Al Bateen, Abu Dhabi. All rights reserved.</div>
+    <div class="footer-copy">Redesign Sample by M. Haseeb Honey</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/97126660175" class="wa-float" target="_blank">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+document.body.classList.add('js-ready');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, {threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

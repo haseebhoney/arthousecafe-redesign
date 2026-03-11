@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Our Menu — Art House Café Abu Dhabi</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="shared.css"/>
+<style>
+.menu-section-title{font-family:"Playfair Display",serif;font-size:28px;font-weight:700;color:var(--dark);margin:64px 0 28px;padding-bottom:12px;border-bottom:2px solid var(--light);display:flex;align-items:center;gap:14px;}
+.menu-section-title span{font-size:28px;}
+.menu-full-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.menu-item{background:#fff;border:1px solid var(--light);border-radius:10px;padding:22px 24px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;transition:.25s;}
+.menu-item:hover{box-shadow:0 8px 30px rgba(196,98,45,0.1);transform:translateY(-2px);}
+.menu-item-left{}
+.menu-item-name{font-family:"Playfair Display",serif;font-size:17px;font-weight:700;color:var(--dark);margin-bottom:6px;}
+.menu-item-desc{font-size:13px;color:var(--mid);line-height:1.6;}
+.menu-item-price{font-family:"Playfair Display",serif;font-size:20px;font-weight:700;color:var(--terra);white-space:nowrap;}
+.menu-note{background:var(--cream2);border-left:4px solid var(--terra);padding:18px 24px;border-radius:0 8px 8px 0;font-size:14px;color:var(--mid);margin-bottom:48px;line-height:1.7;}
+@media(max-width:900px){.menu-full-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <span>📍 Al Bateen, Abu Dhabi</span>
+    <span>🕘 Open Daily: 9AM – 11PM</span>
+    <span>📞 02 666 0175</span>
+  </div>
+  <div class="topbar-right">
+    <a href="https://instagram.com/arthousecafead" target="_blank">Instagram</a>
+    <a href="https://facebook.com/ArtHouseCafeAUH" target="_blank">Facebook</a>
+    <a href="https://tiktok.com/@arthousecafead" target="_blank">TikTok</a>
+  </div>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-mark">AH</div>
+      <div class="nav-logo-text">Art House<span>Café — Abu Dhabi</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="activities.html">Activities</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right">
+      <span class="nav-phone">02 666 0175</span>
+      <a href="contact.html" class="nav-btn">Reserve a Table</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <span>Our Menu</span></div>
+    <h1>Our <em>Menu</em></h1>
+    <p>Hand-crafted food and beverages made from sourced ingredients — served in Abu Dhabi's most unique artistic setting.</p>
+  </div>
+</div>
+
+<div class="section">
+
+  <div class="menu-note">
+    🌿 All our dishes are freshly prepared using quality sourced ingredients. Menu items and prices may change seasonally. For allergies or special dietary requirements, please speak to our team.
+  </div>
+
+  <!-- BREAKFAST & BRUNCH -->
+  <div class="menu-section-title"><span>🍳</span> Breakfast & Brunch</div>
+  <div class="menu-full-grid reveal">
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Plain Pancakes</div><div class="menu-item-desc">Three fluffy pancakes served with fresh berries and maple syrup or honey.</div></div><div class="menu-item-price">AED 45</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Rocher Pancakes</div><div class="menu-item-desc">Pancakes topped with Ferrero Rocher crumble, Nutella and fresh berries. A guest favourite.</div></div><div class="menu-item-price">AED 55</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">French Toast</div><div class="menu-item-desc">Thick-cut brioche french toast with whipped cream, berries and powdered sugar.</div></div><div class="menu-item-price">AED 48</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Eggs Benedict</div><div class="menu-item-desc">Poached eggs on toasted English muffin with smoked salmon and hollandaise sauce.</div></div><div class="menu-item-price">AED 52</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Shakshuka</div><div class="menu-item-desc">Slow-cooked spiced tomato sauce with perfectly set eggs, fresh herbs and warm bread.</div></div><div class="menu-item-price">AED 48</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Full English Breakfast</div><div class="menu-item-desc">Eggs your way, grilled tomato, sautéed mushrooms, baked beans, toast and turkey bacon.</div></div><div class="menu-item-price">AED 58</div></div>
+  </div>
+
+  <!-- MAINS -->
+  <div class="menu-section-title"><span>🍽️</span> Main Dishes</div>
+  <div class="menu-full-grid reveal">
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Grilled Chicken Sandwich</div><div class="menu-item-desc">Marinated grilled chicken breast in a toasted brioche bun with lettuce, tomato and garlic aioli.</div></div><div class="menu-item-price">AED 52</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Art House Club Sandwich</div><div class="menu-item-desc">Triple-decker with turkey, cheese, egg, lettuce and tomato. Served with crispy fries.</div></div><div class="menu-item-price">AED 55</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Pasta Arrabbiata</div><div class="menu-item-desc">Penne pasta in a spicy tomato and garlic sauce, topped with fresh basil and parmesan.</div></div><div class="menu-item-price">AED 48</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Chicken Caesar Salad</div><div class="menu-item-desc">Crispy romaine, grilled chicken strips, croutons, parmesan and creamy Caesar dressing.</div></div><div class="menu-item-price">AED 50</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Beef Burger</div><div class="menu-item-desc">Juicy beef patty with caramelised onions, cheddar, pickles and special sauce in a brioche bun.</div></div><div class="menu-item-price">AED 58</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Mezze Platter</div><div class="menu-item-desc">Hummus, baba ghanoush, tabbouleh, olives and warm pita bread. Perfect for sharing.</div></div><div class="menu-item-price">AED 55</div></div>
+  </div>
+
+  <!-- SHARING & SNACKS -->
+  <div class="menu-section-title"><span>🌮</span> Sharing & Snacks</div>
+  <div class="menu-full-grid reveal">
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Loaded Nachos</div><div class="menu-item-desc">Crispy tortilla chips with salsa, sour cream, jalapeños and melted cheese sauce.</div></div><div class="menu-item-price">AED 45</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Chicken Wings</div><div class="menu-item-desc">Perfectly seasoned crispy chicken wings served with your choice of dipping sauce.</div></div><div class="menu-item-price">AED 45</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Sweet Potato Fries</div><div class="menu-item-desc">Crispy golden sweet potato fries with garlic mayo and a sprinkle of sea salt.</div></div><div class="menu-item-price">AED 28</div></div>
+  </div>
+
+  <!-- HOT DRINKS -->
+  <div class="menu-section-title"><span>☕</span> Hot Drinks</div>
+  <div class="menu-full-grid reveal">
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Art House Latte</div><div class="menu-item-desc">Our signature house blend — strong, smooth and beautifully balanced with steamed milk.</div></div><div class="menu-item-price">AED 22</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Cappuccino</div><div class="menu-item-desc">Espresso with equal parts steamed milk and velvety foam. A timeless classic.</div></div><div class="menu-item-price">AED 20</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Flat White</div><div class="menu-item-desc">Double ristretto shots with silky microfoam milk. Intense and smooth.</div></div><div class="menu-item-price">AED 20</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Matcha Latte</div><div class="menu-item-desc">Premium ceremonial grade matcha whisked with steamed oat milk. Earthy and calming.</div></div><div class="menu-item-price">AED 25</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Chai Latte</div><div class="menu-item-desc">Warming blend of spiced chai concentrate and frothy steamed milk. Comforting every time.</div></div><div class="menu-item-price">AED 22</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Hot Chocolate</div><div class="menu-item-desc">Rich Belgian chocolate melted into steamed milk, topped with whipped cream.</div></div><div class="menu-item-price">AED 24</div></div>
+  </div>
+
+  <!-- COLD DRINKS -->
+  <div class="menu-section-title"><span>🥤</span> Cold Drinks & Smoothies</div>
+  <div class="menu-full-grid reveal">
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Mango Smoothie</div><div class="menu-item-desc">Blended fresh mango, banana and yoghurt. Thick, tropical and totally refreshing.</div></div><div class="menu-item-price">AED 28</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Mixed Berry Smoothie</div><div class="menu-item-desc">Blueberry, strawberry and raspberry blended with honey and almond milk.</div></div><div class="menu-item-price">AED 28</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Watermelon Mint Juice</div><div class="menu-item-desc">Freshly pressed watermelon with a hint of mint and a squeeze of lime. Perfect for Abu Dhabi.</div></div><div class="menu-item-price">AED 25</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Iced Caramel Latte</div><div class="menu-item-desc">Espresso poured over ice with cold milk and a drizzle of house caramel sauce.</div></div><div class="menu-item-price">AED 25</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Lemon Mint Cooler</div><div class="menu-item-desc">Fresh lemon juice, mint leaves, sugar syrup and sparkling water over crushed ice.</div></div><div class="menu-item-price">AED 22</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Avocado Shake</div><div class="menu-item-desc">Creamy blended avocado with honey and milk. A beloved Abu Dhabi café staple.</div></div><div class="menu-item-price">AED 30</div></div>
+  </div>
+
+  <!-- DESSERTS -->
+  <div class="menu-section-title"><span>🍰</span> Desserts</div>
+  <div class="menu-full-grid reveal">
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Chocolate Lava Cake</div><div class="menu-item-desc">Warm dark chocolate cake with a molten centre, served with vanilla ice cream.</div></div><div class="menu-item-price">AED 35</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Cheesecake of the Day</div><div class="menu-item-desc">Ask your server for today's flavour — baked fresh daily in-house.</div></div><div class="menu-item-price">AED 32</div></div>
+    <div class="menu-item"><div class="menu-item-left"><div class="menu-item-name">Umm Ali</div><div class="menu-item-desc">Classic Egyptian bread pudding with nuts, raisins and warm cream. A true comfort dessert.</div></div><div class="menu-item-price">AED 30</div></div>
+  </div>
+
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="section-tag" style="justify-content:center;color:var(--gold);">Visit Us</div>
+  <h2 class="section-h2" style="color:#fff;text-align:center;">Come Taste the <em style="color:var(--gold);">Art House</em> Experience</h2>
+  <p>Open daily 9AM – 11PM at Al Bateen, Abu Dhabi. Walk-ins welcome — reservations recommended for groups.</p>
+  <div class="cta-btns">
+    <a href="contact.html" class="btn-primary">Reserve a Table</a>
+    <a href="activities.html" class="btn-outline">Explore Activities</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Art House Café</div>
+      <div class="footer-brand-tag">Food · Art · Sustainability</div>
+      <p class="footer-brand-desc">Established in 2014 by HE Khalid Sedeeq Al Mutawaa — a café built from the heart to celebrate art, nature, and community in Abu Dhabi.</p>
+    </div>
+    <div>
+      <div class="footer-h">Navigate</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-h">Menu Sections</div>
+      <ul class="footer-links">
+        <li><a href="menu.html">Breakfast & Brunch</a></li>
+        <li><a href="menu.html">Main Dishes</a></li>
+        <li><a href="menu.html">Sharing & Snacks</a></li>
+        <li><a href="menu.html">Hot Drinks</a></li>
+        <li><a href="menu.html">Cold Drinks</a></li>
+        <li><a href="menu.html">Desserts</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-h">Contact</div>
+      <div class="footer-contact-item"><span class="footer-contact-icon">📍</span> Villa 15, Al Huweelat St, Al Bateen, Abu Dhabi</div>
+      <div class="footer-contact-item"><span class="footer-contact-icon">📞</span> 02 666 0175</div>
+      <div class="footer-contact-item"><span class="footer-contact-icon">🕘</span> Daily: 9AM – 11PM</div>
+      <div class="footer-contact-item"><span class="footer-contact-icon">📸</span> @arthousecafead</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Art House Café — Al Bateen, Abu Dhabi. All rights reserved.</div>
+    <div class="footer-copy">Redesign Sample by M. Haseeb Honey</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/97126660175" class="wa-float" target="_blank" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+document.body.classList.add('js-ready');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, {threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
